@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/groot/core/test_tree.gd" type="Script" id=3]
+
+[node name="groot" type="Node"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": "You must  inherit this scene instead of using it directly from `addons/` folder.
+
+Note that `scenes` is populated automatically by traversing all scenes having `search_pattern` from specified `directory`.
+"
+}
+
+[node name="scenes" type="ResourcePreloader" parent="."]
+__meta__ = {
+"_editor_description_": "DO NOT ADD ANY SCENES HERE, THIS NODE IS POPULATED AUTOMATICALLY!!!"
+}
